@@ -20,13 +20,13 @@ h2 {
 
 header, main, footer {
     margin: 1.25rem auto;
-    
     max-width: 600px;
 }
 
 header, footer, footer a {
     text-align: center;
     background-color: #73a1b0;
+    color: #ffffff;
 }
 
 header img {
