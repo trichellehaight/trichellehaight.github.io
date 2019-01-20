@@ -15,18 +15,19 @@ h1 {
 h2 {
     font-size: 1.25rem;
     text-align: center;
-    
+    border-bottom: 1px solid #ffffff;
 }
 
 header, main, footer {
     margin: 1.25rem auto;
+    padding: .5rem;
     max-width: 600px;
 }
 
 header, footer, footer a {
     text-align: center;
     background-color: #73a1b0;
-    color: #ffffff;
+    color: whitesmoke;
 }
 
 header img {
