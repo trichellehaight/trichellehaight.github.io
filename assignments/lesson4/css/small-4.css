@@ -1,0 +1,117 @@
+body {
+    max-width: 960px;
+    margin: auto;
+	background-color: #00303f;
+}
+
+header {
+	margin: 10px auto;
+	background-color: #7a9d96;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: #dcae1d;
+    margin-bottom: -4px;
+    margin-top: 5px;
+}
+h2{
+    font-family: "Oswald", sans-serif;
+    color: #00303f;
+}
+.motto {
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    color: #00303f;
+}
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+body {
+	font-size: 16px;
+	font-family: "EB Garamond", serif;
+}
+nav {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #00303f;
+	text-align: center;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav a {
+	display: block;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+nav a:hover {
+	background-color: #7a9d96;
+	color:#00303f;
+}
+
+.h li {
+	display: inline-block;
+}
+
+.v li {
+	display: block;
+}
+
+.fullwidth {
+    width: 100%;
+    position: relative;
+}
+.left-column {
+    width: 48%;
+    position: absolute;
+    background-color: #7a9d96;
+    margin-left: 20px;
+    top: 810px;
+    padding: 5x;
+}
+.city{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.articletitle{
+    color:#ffffff;
+    margin-bottom: -20px;
+    font-family: "Oswald", sans-serif;
+    color: #00303f;
+}
+.articlebody{
+    background-color:#7a9d96;
+    padding: 10px;
+    color: #00303f;
+}
+p {
+    color: #00303f;
+}
+.footer {
+    background-color: #7a9d96;
+    color: #ffffff;
+}
+.contactinfo{
+    background-color:#7a9d96;
+    color:#00303f;
+}
+.map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-bottom: 25px;
+}
