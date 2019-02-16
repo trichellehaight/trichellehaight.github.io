@@ -41,7 +41,8 @@
     <main>
         <h2 class="city"> Preston, Idaho</h2>
         <div class="herodiv">
-            <img src="images/sunset-optimize1.jpg" alt="Preston Hero Image" class="heroimg">
+            <img src="images/optimizeimage-960px.jpg" sizes="100vw" alt="Alt Hero Image" class="heroimg" 
+            srcset="images/optimizeimage-300px.jpg 300w, images/optimizeimage-500px.jpg 500w, images/optimizeimage-960px.jpg 960w">
             <section class="stats">
                 <h3>Weather Summary</h3>
                 <p>Current: <span id="value1">Value</span></p>
@@ -74,8 +75,9 @@
             </section>
             <section>
                 <div class="article">
+                    <img src="images/flowers-2.jpg" alt="Summer Flowers" class="articleimg">
                     <h2 class="articletitle">Summer is Coming!</h2>
-                    <pre class="author">Author: Trichelle Haight<img src="images/flowers.jpg" alt="Summer Flowers" class="articleimg"></pre>
+                    <pre class="author">Author: Trichelle Haight</pre>
                     <p>The weather is warming up and Idaho is welcoming summer!<br>Lorem Ipsum is simply dummy
                         text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
                         ummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
@@ -88,15 +90,15 @@
                 </div>
             </section>
     </main>
-            <section>
-                <div class="contactinfo">
-                        <img src="images/prestonmap.jpg" alt="Preston Map">
-                    <h4>The Spudcaster</h4>
-                    
-                    <p>39 W Oneida St<br>Preston, ID 83263<br><br>111.222.3333<br>hello@thespudcaster.com</p>
-                </div>
-            </section>
+
     <footer>
+        <section class="contactsection">
+            <div class="contactinfo">
+                <h3 class="contact">The Spudcaster</h3>
+                <p>39 W Oneida St<br>Preston, ID 83263<br><br>111.222.3333<br>hello@thespudcaster.com</p>
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.7265390368216!2d-111.88038046218328!3d42.096648779380146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7eb6e6de7d1%3A0x1c5be534f2217780!2sPreston+City+Clerk!5e0!3m2!1sen!2sus!4v1550289337247" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </section>
         <div>
             <p class="footer">&copy; 2019 The Spudcaster - Idaho -
             <span id="currentDate"></span>

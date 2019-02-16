@@ -3,9 +3,7 @@ body {
     margin: auto;
 	background-color: #ffffff;
 }
-main {
-    padding: 10px;
-}
+
 header {
 	margin: 10px auto;
 	background-color: #7a9d96;
@@ -27,8 +25,9 @@ h3{
     color: #00303f;
     text-align: center;
 }
-h4{
-    text-align: left;
+.contact{
+    text-align: center;
+    padding-top: -20px;
 }
 .motto {
     text-align: center;
@@ -109,6 +108,7 @@ nav a:hover {
 .article{
     background-color: #7a9d96;
     padding: 20px;
+    margin-bottom: 20px;
 }
 .articleimg {
     display: block;
@@ -126,25 +126,29 @@ p {
     color: #00303f;
 }
 .footer {
-    background-color: #7a9d96;
+    background-color: #00303f;
     color: #ffffff;
     text-align: center;
     padding-right: 10px;
     padding-left: 10px;
     padding: 20px;
+    margin-top: -16px;
+    clear: both;
 }
 .contactinfo{
     background-color:#7a9d96;
     color:#00303f;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    padding-top: 5px;
 }
-.contactinfo img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.contactsection{
+    float: clear;
+}
+.map{
+    display: inline-block;
     width: 100%;
-    float: right;
+    align-content: center;
 }
 .active {
     background-color:#7a9d96;
@@ -172,6 +176,4 @@ p {
     width: 100%;
     height: auto;
 }
-.contactinfo {
-    color: #00303f;
-}
+
