@@ -42,6 +42,7 @@ h2{
 h3{
     color: #00303f;
     text-align: center;
+    font-family: "Oswald", sans-serif;
 }
 .contact{
     text-align: center;
@@ -109,14 +110,13 @@ main, footer{
     margin-bottom: 20px;
 }
 .articleimg {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     float: top;
 }
 .author{
-
     color: #00303f;
     font-family: "EB Garamond", serif;
 }
@@ -124,20 +124,18 @@ p {
     color: #00303f;
 }
 .footer {
+    display: flex;
     background-color: #00303f;
     color: #ffffff;
-    text-align: center;
-    padding-right: 10px;
-    padding-left: 10px;
+    justify-content: center;
     padding: 20px;
-    margin-top: -16px;
-    clear: both;
+    margin-top: 0;
 }
 .contactinfo{
     background-color:#7a9d96;
     color:#00303f;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     padding-top: 5px;
 }
 .contactsection{
@@ -190,4 +188,6 @@ figure{
 }
 .galleryheader{
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
