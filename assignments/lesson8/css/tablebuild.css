@@ -1,14 +1,22 @@
 table{
+    width: 300px;
     border-collapse: collapse;
     font-family: 'Ubuntu', sans-serif;
-    
+    box-shadow: 5px 5px 20px #7C7C7C;
 }
 table, td{
     border: 1px solid black;
     padding: 10px;
     text-align: center;
 }
-th{
+thead th{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #7fb9c2;
+}
+tbody th{
     background-color: #628ca6;
     color: white;
     border: 1px solid black;
@@ -24,19 +32,13 @@ tr:nth-child(even){
 tr:nth-child(odd){
     background-color: #e7f0ed;
 }
-.footer{
+tfoot td{
     font-size: 10px;
     background-color: #7fb9c2;
 }
-.title{
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-    background-color: #7fb9c2;
-}
-.blackfriday{
-    font-style: italic;
-}
-.squarecolor{
+tbody tr:nth-child(4) td:nth-child(3){
     background-color:#628ca6;
+}
+tbody tr:nth-child(6) td:first-child{
+    font-style: italic;
 }
