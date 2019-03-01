@@ -9,9 +9,9 @@
         content="The Spudcaster: A weather and community events hub for residents of Preston, Soda Springs and Fish Haven.">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Oswald" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small-7.css" rel="stylesheet">
-    <link href="css/medium-7.css" rel="stylesheet">
-    <link href="css/large-7.css" rel="stylesheet">
+    <link href="css/small-8.css" rel="stylesheet">
+    <link href="css/medium-8.css" rel="stylesheet">
+    <link href="css/large-8.css" rel="stylesheet">
 
 </head>
 
@@ -27,65 +27,54 @@
         <ul class="navigation">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="preston-7.html" class="active">Preston</a></li>
+            <li><a href="preston-8.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
-            <li><a href="#">Storm Center</a></li>
+            <li><a href="stormcenter.html" class="active">Storm Center</a></li>
             <li><a href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
     <main>
-        <h2 class="city"> Preston, Idaho</h2>
-        <div class="herodiv">
-            <img src="images/sunsetoptimize-960px.jpg" sizes="100vw" alt="Alt Hero Image" class="heroimg"
-                srcset="images/sunsetoptimize-300.jpg 300w, images/sunsetoptimize-500.jpg 500w, images/sunsetoptimize-960px.jpg 960w">
-            <section class="stats">
-                <h3>Weather Summary</h3>
-                <p>Current: <span id="temp">79 &deg;F</span></p>
-                <p>High: <span id="high"></span>42 &deg;F</p>
-                <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
-                <p>Humidity: <span id="humidity">72%</span></p>
-                <p>Wind Speed: SW <span id="speed">7</span> mph</p>
-            </section>
-        </div>
-        <section class="forecast">
-            <h3 class="forecastheader">5 Day Forecast</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>89&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>95&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>87&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>92&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>90&deg;F</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <h2 class="city">Storm Center</h2>
+        <h3 class="city">Have a storm to report? Let us know in the form below.</h3>
         <section>
-            <div class="article">
-                <img src="images/flowers-2.jpg" alt="Summer Flowers" class="articleimg">
-                <h2 class="articletitle">Summer is Coming!</h2>
-                <pre class="author">Author: Trichelle Haight</pre>
-                <p>The weather is warming up and Idaho is welcoming summer!<br>Lorem Ipsum is simply dummy
-                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                    ummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book. It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...
-                    <small><a href="#">continue to full article</a></small>
-                </p>
+            <div>
+                <fieldset>
+                    <form action="thanks.html" target="_blank"><br>
+                        Full Name:<br>
+                        <input type="text" name="fullname" pattern="[A-Za-z]{5,}" required><br><br>
+                        Email:<br>
+                        <input type="text" name="email" placeholder="yourname@gmail.com"><br><br>
+                        Phone Number:<br>
+                        <input type="tel" name="number" required><br><br>
+                        Zip Code:<br>
+                        <input type="number" name="zipcode" required><br><br>
+                        Storm Date:<br>
+                        <input class="date" type="date" name="date"><br><br>
+                        Storm Type:<br>
+                        <input list="stormtype" name="type"><br><br>
+                        <datalist id="stormtype">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                        Storm Severity<br>
+                        Range (1 to 10):<br><br>
+                        <input type="range" id="range" value="5" min="1" max="10" step="1"
+                            oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
+                        <span id="rangevalue">5</span><br><br>
+                        In Danger?<br>
+                        <input type="radio" name="danger" value="yes" checked> Yes<br>
+                        <input type="radio" name="danger" value="no"> No<br>
+                        <input type="radio" name="danger" value="maybe"> Maybe<br><br>
+                        Additional Comments<br>
+                        <textarea rows="4" cols="50" name="comment" form="usrform"></textarea><br><br>
+                        <input class="submit" type="submit" value="Submit"><br><br>
+                    </form>
+                </fieldset>
             </div>
         </section>
     </main>
@@ -93,11 +82,13 @@
     <footer>
         <section class="contactsection">
             <div class="contactinfo">
-                <div><h3 class="contact">The Spudcaster</h3></div>
+                <div>
+                    <h3 class="contact">The Spudcaster</h3>
+                </div>
                 <p>39 W Oneida St<br>Preston, ID 83263<br><br>111.222.3333<br>hello@thespudcaster.com</p>
                 <div><iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.7265390368216!2d-111.88038046218328!3d42.096648779380146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7eb6e6de7d1%3A0x1c5be534f2217780!2sPreston+City+Clerk!5e0!3m2!1sen!2sus!4v1550289337247"
-                    width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.7265390368216!2d-111.88038046218328!3d42.096648779380146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7eb6e6de7d1%3A0x1c5be534f2217780!2sPreston+City+Clerk!5e0!3m2!1sen!2sus!4v1550289337247"
+                        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
             </div>
         </section>
         <div>
@@ -109,6 +100,7 @@
     <script src="js/togglemenu.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/range.js"></script>
 </body>
 
 </html>
