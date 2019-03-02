@@ -7,7 +7,7 @@
     <title>The Spudcaster | Preston, ID | Weather & Community Events</title>
     <meta name="description"
         content="The Spudcaster: A weather and community events hub for residents of Preston, Soda Springs and Fish Haven.">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cOswald" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/small-8.css" rel="stylesheet">
     <link href="css/medium-8.css" rel="stylesheet">
@@ -37,45 +37,41 @@
 
     <main>
         <h2 class="city">Storm Center</h2>
-        <h3 class="city">Have a storm to report? Let us know in the form below.</h3>
+        <h3 class="stormcenter">Have a storm to report? Let us know in the form below.</h3>
         <section>
-            <div>
-                <fieldset>
-                    <form action="thanks.html" target="_blank"><br>
-                        Full Name:<br>
-                        <input type="text" name="fullname" pattern="[A-Za-z]{5,}" required><br><br>
-                        Email:<br>
-                        <input type="text" name="email" placeholder="yourname@gmail.com"><br><br>
-                        Phone Number:<br>
-                        <input type="tel" name="number" required><br><br>
-                        Zip Code:<br>
-                        <input type="number" name="zipcode" required><br><br>
-                        Storm Date:<br>
-                        <input class="date" type="date" name="date"><br><br>
-                        Storm Type:<br>
-                        <input list="stormtype" name="type"><br><br>
-                        <datalist id="stormtype">
-                            <option value="Flash Flood">
-                            <option value="Hail">
-                            <option value="Hurricane">
-                            <option value="Thunderstorm">
-                            <option value="Tornado">
-                        </datalist>
-                        Storm Severity<br>
-                        Range (1 to 10):<br><br>
-                        <input type="range" id="range" value="5" min="1" max="10" step="1"
-                            oninput="adjustRange(this.value)" onchange="adjustRange(this.value)">
-                        <span id="rangevalue">5</span><br><br>
-                        In Danger?<br>
-                        <input type="radio" name="danger" value="yes" checked> Yes<br>
-                        <input type="radio" name="danger" value="no"> No<br>
-                        <input type="radio" name="danger" value="maybe"> Maybe<br><br>
-                        Additional Comments<br>
-                        <textarea rows="4" cols="50" name="comment" form="usrform"></textarea><br><br>
-                        <input class="submit" type="submit" value="Submit"><br><br>
-                    </form>
-                </fieldset>
-            </div>
+                <form action="thanks.html" method="get"><br>
+                    Full Name<br>
+                    <input type="text" name="fullname" size="40" pattern="[A-Za-z\s]{5,}" required autofocus><br><br>
+                    Email<br>
+                    <input type="text" name="email" size="40" placeholder="yourname@gmail.com"><br><br>
+                    Phone Number<br>
+                    <input type="tel" name="number" size="30" required><br><br>
+                    Zip Code<br>
+                    <input type="number" name="zipcode" required><br><br>
+                    Storm Date<br>
+                    <input class="date" type="date" name="date"><br><br>
+                    Storm Type<br>
+                    <input list="stormtype" name="type"><br><br>
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                    Storm Severity<br>
+                    Range (1 to 10)<br><br>
+                    <input type="range" id="range" value="5" min="1" max="10" step="1" oninput="adjustRange(this.value)"
+                        onchange="adjustRange(this.value)">
+                    <span id="rangevalue">5</span><br><br>
+                    Are You In Danger? (Choose One)<br>
+                    <input type="radio" name="danger" value="yes" checked> Yes<br>
+                    <input type="radio" name="danger" value="no"> No<br>
+                    <input type="radio" name="danger" value="maybe"> Maybe<br><br>
+                    Additional Comments<br>
+                    <textarea class="comments" rows="4" cols="40" name="comment"></textarea><br><br>
+                    <input class="submit" type="submit" value="Submit Report"><br><br>
+                </form>
         </section>
     </main>
 
@@ -88,7 +84,7 @@
                 <p>39 W Oneida St<br>Preston, ID 83263<br><br>111.222.3333<br>hello@thespudcaster.com</p>
                 <div><iframe class="map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.7265390368216!2d-111.88038046218328!3d42.096648779380146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7eb6e6de7d1%3A0x1c5be534f2217780!2sPreston+City+Clerk!5e0!3m2!1sen!2sus!4v1550289337247"
-                        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+                        width="400" height="300" style="border:0" allowfullscreen></iframe></div>
             </div>
         </section>
         <div>
@@ -99,7 +95,6 @@
     </footer>
     <script src="js/togglemenu.js"></script>
     <script src="js/currentdate.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/range.js"></script>
 </body>
 

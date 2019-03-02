@@ -72,8 +72,17 @@ tr{
 }
 .gallery {
     grid-template-columns: repeat(3, minmax(300px, 1fr));
-    grid-gap: 5px;
-    align-items: stretch;
 }
 .weathergallery:hover {box-shadow: 0 0 50px #333;}
+}
+form{
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: left;
+    color: #00303f;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
 }
