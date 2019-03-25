@@ -232,3 +232,32 @@ input {
   .comments{
       display: flex;
   }
+
+.datacolumns{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-gap: 15px;
+}
+.datacolumns div{
+    background-color: #ffffff;
+    border: 3px solid #7a9d96;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px gray;
+}
+.datacolumns h3{
+    text-align: center;
+    font-size: 30px;
+    color: #dcae1d;
+}
+.datacolumns img{
+    width: 100%;
+    margin-top: 10px;
+}
+.datacolumns p{
+    font-style: italic;
+}

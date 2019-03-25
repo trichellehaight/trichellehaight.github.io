@@ -1,53 +1,61 @@
-var header = document.querySelector('header');
-var section = document.querySelector('section');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var request = new XMLHttpRequest();
+let output = document.querySelector('div.datacolumns');
+
+let requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+let request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-request.onload = function () {
-    var superHeroes = request.response;
-    populateHeader(superHeroes);
-    showHeroes(superHeroes);
-}
-function populateHeader(jsonObj) {
-    var myH1 = document.createElement('h1');
-    myH1.textContent = jsonObj['squadName'];
-    header.appendChild(myH1);
 
-    var myPara = document.createElement('p');
-    myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-    header.appendChild(myPara);
-}
-function showHeroes(jsonObj) {
-    var heroes = jsonObj['members'];
-        
-    for (var i = 0; i < heroes.length; i++) {
-      var myArticle = document.createElement('article');
-      var myH2 = document.createElement('h2');
-      var myPara1 = document.createElement('p');
-      var myPara2 = document.createElement('p');
-      var myPara3 = document.createElement('p');
-      var myList = document.createElement('ul');
-  
-      myH2.textContent = heroes[i].name;
-      myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-      myPara2.textContent = 'Age: ' + heroes[i].age;
-      myPara3.textContent = 'Superpowers:';
-          
-      var superPowers = heroes[i].powers;
-      for (var j = 0; j < superPowers.length; j++) {
-        var listItem = document.createElement('li');
-        listItem.textContent = superPowers[j];
-        myList.appendChild(listItem);
+request.onload = function () {
+  let townData = request.response;
+  let number = 0;
+  let townNames = townData['towns'];
+  console.log = (townData);
+
+  for (let i = 0; i <townNames.length; i++) {
+
+    if (townNames[i].name == "Preston" || townNames[i].name == "Soda Springs" || townNames[i].name == "Fish Haven") {
+      
+      let divTownNames = document.createElement('div');
+      divTownNames.setAttribute('class', 'dataColumns');
+      let myH3 = document.createElement('h3');
+      let myP1 = document.createElement('p');
+      let myP2 = document.createElement('p');
+      let myP3 = document.createElement('p');
+      let myP4 = document.createElement('p');
+      let img = document.createElement('img');
+      let sspringsimg = document.createElement('img');
+      let fishhavenimg = document.createElement('img');
+
+      img.src = "images/column1.jpg";
+      sspringsimg.src = "images/column2.jpg";
+      fishhavenimg.src = "images/column3.jpg";
+
+      myH3.textContent = townNames[i].name;
+      myP1.textContent = townNames[i].motto;
+      myP2.textContent = "Year Founded: " + townNames[i].yearFounded;
+      myP3.textContent = "Current Population: " + townNames[i].currentPopulation;
+      myP4.textContent = "Average Rainfall: " + townNames[i].averageRainfall + '"';
+
+      divTownNames.appendChild(myH3);
+      divTownNames.appendChild(myP1);
+      divTownNames.appendChild(myP2);
+      divTownNames.appendChild(myP3);
+      divTownNames.appendChild(myP4);
+
+      output.appendChild(divTownNames);
+
+      switch (number) {
+          case 0: divTownNames.appendChild(img);
+              break;
+
+          case 1: divTownNames.appendChild(sspringsimg);
+
+              break;
+          case 2: divTownNames.appendChild(fishhavenimg);
       }
-  
-      myArticle.appendChild(myH2);
-      myArticle.appendChild(myPara1);
-      myArticle.appendChild(myPara2);
-      myArticle.appendChild(myPara3);
-      myArticle.appendChild(myList);
-  
-      section.appendChild(myArticle);
+      number++;
     }
   }
+}
+
