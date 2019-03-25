@@ -1,0 +1,10 @@
+var d = new Date();
+    var date = d.getDate();
+    var weekday = d.getDay();
+    var weekdayArr = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    weekday = weekdayArr[weekday];
+    var year = d.getFullYear();
+    var month = d.getMonth();
+    var monthArr = ["January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November","December"];
+    month = monthArr[month];
+    document.getElementById("currentDate").innerHTML =weekday + "," + " " + date + " " + month + " " + year;

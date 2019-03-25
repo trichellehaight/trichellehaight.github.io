@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Spudcaster | Preston, ID | Weather & Community Events</title>
+    <meta name="description"
+        content="The Spudcaster: A weather and community events hub for residents of Preston, Soda Springs and Fish Haven.">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond%7cOswald" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small-10.css" rel="stylesheet">
+    <link href="css/medium-10.css" rel="stylesheet">
+    <link href="css/large-10.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img class="spudlogo" src="images/spudcast.png" alt="Spudcast logo">
+        <div class="headings">
+            <h1>The Spudcaster</h1>
+            <div class="motto">The spud you can trust!</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston-10.html" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="city"> Preston, Idaho</h2>
+        <div class="herodiv">
+            <img src="images/sunsetoptimize-960px.jpg" sizes="100vw" alt="Alt Hero Image" class="heroimg"
+                srcset="images/sunsetoptimize-300.jpg 300w, images/sunsetoptimize-500.jpg 500w, images/sunsetoptimize-960px.jpg 960w">
+            <section class="stats">
+                <h3>Weather Summary</h3>
+                <p>Current: <span id="temp">79 &deg;F</span></p>
+                <p>High: <span id="high"></span>42 &deg;F</p>
+                <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
+                <p>Humidity: <span id="humidity">72%</span></p>
+                <p>Wind Speed: SW <span id="speed">7</span> mph</p>
+            </section>
+        </div>
+        <section class="forecast">
+            <h3 class="forecastheader">5 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>89&deg;F</td>
+                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>95&deg;F</td>
+                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>87&deg;F</td>
+                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>92&deg;F</td>
+                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>90&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <div class="article">
+                <img src="images/flowers-2.jpg" alt="Summer Flowers" class="articleimg">
+                <h2 class="articletitle">Summer is Coming!</h2>
+                <pre class="author">Author: Trichelle Haight</pre>
+                <p>The weather is warming up and Idaho is welcoming summer!<br>Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                    ummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                    it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                    desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum...
+                    <small><a href="#">continue to full article</a></small>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contactsection">
+            <div class="contactinfo">
+                <div><h3 class="contact">The Spudcaster</h3></div>
+                <p>39 W Oneida St<br>Preston, ID 83263<br><br>111.222.3333<br>hello@thespudcaster.com</p>
+                <div><iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.7265390368216!2d-111.88038046218328!3d42.096648779380146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7eb6e6de7d1%3A0x1c5be534f2217780!2sPreston+City+Clerk!5e0!3m2!1sen!2sus!4v1550289337247"
+                    width="400" height="300" style="border:0" allowfullscreen></iframe></div>
+            </div>
+        </section>
+        <div>
+            <p class="footer">&copy; 2019 The Spudcaster - Idaho - <span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <script src="js/togglemenu.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
