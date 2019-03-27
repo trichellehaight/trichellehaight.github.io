@@ -31,7 +31,6 @@ header {
 }
 h1{
     color: #dcae1d;
-
     margin-bottom: auto;
     margin-top: 5px;
 }
@@ -40,9 +39,7 @@ h2{
     color: #00303f;
 }
 h3{
-    color: #00303f;
     text-align: center;
-    font-family: "Oswald", sans-serif;
 }
 .contact{
     text-align: center;
@@ -260,4 +257,15 @@ input {
 }
 .datacolumns p{
     font-style: italic;
+}
+.prestonevents{
+    border: 3px dotted #7a9d96;
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+.cityevents{
+    color: #00303f;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-decoration: underline;
 }

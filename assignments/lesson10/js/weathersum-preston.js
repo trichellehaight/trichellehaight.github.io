@@ -11,10 +11,6 @@ weatherRequest.onload = function () {
     document.getElementById("high").innerHTML = weatherData.main.temp_max;
     document.getElementById("humidity").innerHTML = weatherData.main.humidity;
     document.getElementById("wind").innerHTML = weatherData.wind.speed;
-
-    let speed = parseInt(weatherData.wind.speed, 10);
-    let temp = parseInt(weatherData.main.temp_max, 10);
-
-    return windChill(temp, speed);
+    document.getElementById("windchill").innerHTML = windChill(weatherData.main.temp_max, weatherData.wind.speed).toFixed(2);
 
 }
