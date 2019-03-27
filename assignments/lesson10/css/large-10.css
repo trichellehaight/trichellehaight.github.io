@@ -5,6 +5,7 @@ h3{
 }
 .forecastheader{
     text-align: center;
+    font-family: "EB Garamond", serif;
 }
 .contact{
     text-align: left;
@@ -42,28 +43,24 @@ p {
 }
 
 .forecast{
-    display: block;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
     text-align: center;
-    margin: 1rem auto; 
+    margin-bottom: 20px;
 }
 .forecast-image {
     width: 100%;
 }
-.forecast td {
-    border: 1px solid #7a9d96;
-}
-.forecast tr {
-    border: 1px solid #7a9d96;
-}
-.forecast th {
-    background-color: #7a9d96;
+.forecast td, th {
+    border: 2px solid #7a9d96;
 }
 tr{
     border: .4pt;
 }
 .forecast table{
-    border: thick solid #7a9d96;
+    border-collapse: collapse;
 }
 .map{
     display: inline-block;

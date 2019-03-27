@@ -42,11 +42,11 @@
                 srcset="images/sunsetoptimize-300.jpg 300w, images/sunsetoptimize-500.jpg 500w, images/sunsetoptimize-960px.jpg 960w">
             <section class="stats">
                 <h3>Weather Summary</h3>
-                <p>Current: <span id="temp">79 &deg;F</span></p>
-                <p>High: <span id="high"></span>42 &deg;F</p>
+                <p>Current: <span id="current"> &deg;F</span></p>
+                <p>High: <span id="high"></span> &deg;F</p>
                 <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
-                <p>Humidity: <span id="humidity">72%</span></p>
-                <p>Wind Speed: SW <span id="speed">7</span> mph</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="wind"></span> mph</p>
             </section>
         </div>
         <section class="forecast">
@@ -54,20 +54,27 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
+                        <th><span id="forecastday1"></span></th>
+                        <th><span id="forecastday2"></span></th>
+                        <th><span id="forecastday3"></span></th>
+                        <th><span id="forecastday4"></span></th>
+                        <th><span id="forecastday5"></span></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>89&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>95&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>87&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>92&deg;F</td>
-                        <td><img src="images/sun.png" alt="" class="forecast-image"><br>90&deg;F</td>
+                        <td><img id="cc-img1" src="" alt=""><br></td>
+                        <td><img id="cc-img2" src="" alt=""><br></td>
+                        <td><img id="cc-img3" src="" alt=""><br></td>
+                        <td><img id="cc-img4" src="" alt=""><br></td>
+                        <td><img id="cc-img5" src="" alt=""><br></td>
+                    </tr>
+                    <tr>
+                        <td><span id="high1"></span> &deg;F</td>
+                        <td><span id="high2"></span> &deg;F</td>
+                        <td><span id="high3"></span> &deg;F</td>
+                        <td><span id="high4"></span> &deg;F</td>
+                        <td><span id="high5"></span> &deg;F</td>
                     </tr>
                 </tbody>
             </table>
@@ -93,11 +100,13 @@
     <footer>
         <section class="contactsection">
             <div class="contactinfo">
-                <div><h3 class="contact">The Spudcaster</h3></div>
+                <div>
+                    <h2 class="contact">The Spudcaster</h2>
+                </div>
                 <p>39 W Oneida St<br>Preston, ID 83263<br><br>111.222.3333<br>hello@thespudcaster.com</p>
                 <div><iframe class="map"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.7265390368216!2d-111.88038046218328!3d42.096648779380146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7eb6e6de7d1%3A0x1c5be534f2217780!2sPreston+City+Clerk!5e0!3m2!1sen!2sus!4v1550289337247"
-                    width="400" height="300" style="border:0" allowfullscreen></iframe></div>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.7265390368216!2d-111.88038046218328!3d42.096648779380146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f7eb6e6de7d1%3A0x1c5be534f2217780!2sPreston+City+Clerk!5e0!3m2!1sen!2sus!4v1550289337247"
+                        width="400" height="300" style="border:0" allowfullscreen></iframe></div>
             </div>
         </section>
         <div>
@@ -107,6 +116,8 @@
     <script src="js/togglemenu.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/weatherapi-preston.js"></script>
+    <script src="js/weathersum-preston.js"></script>
 </body>
 
 </html>
