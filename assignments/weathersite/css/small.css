@@ -1,0 +1,271 @@
+
+
+body {
+    background-color: #ffffff;
+    font-size: 16px;
+	font-family: "EB Garamond", serif;
+}
+
+header {
+    padding: 10px;
+	background-color: #7a9d96;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.spudlogo{
+    width: 80px;
+    height: auto;
+	vertical-align: middle;
+    margin: 10px;
+    margin-right: 20px;
+}
+.motto {
+    text-align: center;
+    color: #00303f;
+    margin: 5px;
+}
+h1{
+    color: #dcae1d;
+    margin-bottom: auto;
+    margin-top: 5px;
+}
+h2{
+    font-family: "Oswald", sans-serif;
+    color: #00303f;
+}
+h3{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    padding-top: auto;
+}
+
+nav {
+	background-color: #00303f;
+	text-align: center;
+	padding: 0;
+}
+.navigation {
+	list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.navigation a {
+	display: flex;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+.navigation a:hover {
+	background-color: #7a9d96;
+	color:#00303f;
+}
+.navigation li:first-child{
+    display: flex;
+}
+.navigation li{
+    display: none;
+}
+.responsive li{
+    display: flex;
+}
+
+main, footer{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.fullwidth {
+    width: 100%;
+    position: relative;
+}
+.city{
+    color: #00303f;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+.articletitle{
+    margin: 3px;
+    font-family: "Oswald", sans-serif;
+    color: #00303f;
+}
+.article{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 6px 2px gray; 
+    border: 3px solid #7a9d96;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.articleimg {
+    display: flex;
+    width: 100%;
+    float: top;
+    padding: 5px;
+}
+.author{
+    color: #00303f;
+    font-family: "EB Garamond", serif;
+}
+p {
+    color: #00303f;
+}
+.footer {
+    display: flex;
+    background-color: #00303f;
+    color: #ffffff;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0;
+}
+.contactinfo{
+    background-color:#7a9d96;
+    color:#00303f;
+    text-align: center;
+    padding: 20px;
+    padding-top: 5px;
+}
+.contactsection{
+    clear: both;
+}
+.map{
+    display: inline-block;
+    width: 100%;
+    align-content: center;
+}
+.active {
+    background-color:#dcae1d;
+}
+.forecast{
+    display: none;
+}
+.herodiv{
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+}
+.stats {
+	position: absolute;
+	top: 35px;
+	left: 30px;
+    background: #dcae1d;
+    opacity: 0.9;
+	border: 1px solid #000;
+	padding: 10px;
+	box-shadow: 0 0 30px #fff;
+}
+.heroimg {
+    width: 100%;
+    height: auto;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+}
+figure{ 
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.gallery img {
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px 2px gray;
+    width: 100%;
+}
+.galleryheader{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.stormcenter{
+    color: #00303f;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.thanks{
+    padding: 20px;
+    font-size: 1.5em;
+}
+fieldset{
+    margin-bottom: 30px;
+    border: solid #7a9d96;
+    box-shadow: 1px 1px 5px 1px gray;
+}
+form{
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    color: #00303f;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 20px;
+}
+input {
+    padding: 5px;
+  }
+  .submit{
+      color: #00303f;
+      background-color: #dcae1d;
+      border: thin solid #00303f;
+      max-width: 110px;
+  }
+  .date{
+      color: #00303f;
+  }
+  .comments{
+      display: flex;
+  }
+
+.datacolumns{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-gap: 15px;
+}
+.datacolumns div{
+    background-color: #ffffff;
+    border: 3px solid #7a9d96;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 15px gray;
+}
+.datacolumns h3{
+    text-align: center;
+    font-size: 30px;
+    color: #dcae1d;
+}
+.datacolumns img{
+    width: 100%;
+    margin-top: 10px;
+}
+.datacolumns p{
+    font-style: italic;
+}
+.prestonevents{
+    border: 3px dotted #7a9d96;
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+.cityevents{
+    color: #00303f;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    text-decoration: underline;
+}

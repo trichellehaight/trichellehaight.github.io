@@ -1,0 +1,49 @@
+html {
+    font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  }
+  
+  body {
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1{
+    font-family: 'Permanent Marker', cursive;
+    letter-spacing: normal;
+    font-size: 4rem;
+    text-align: center;
+    color: red;
+  }
+  
+  /* header styles */
+  
+  header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: green;
+  }
+  
+  /* section styles */
+  
+  section article {
+    width: 33%;
+    float: left;
+  }
+  
+  section p {
+    margin: 5px 0;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  section ul {
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    color: navy;
+  }
