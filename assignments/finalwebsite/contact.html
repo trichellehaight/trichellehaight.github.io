@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temple Inn & Suites | Bethesda, MD | Hotel Accommodations</title>
+    <meta name="description"
+        content="Temple Inn & Suites: Hotel accommodations near temples of The Church of Jesus Christ of Latter-Day Saints">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Playfair+Display" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/small.css" rel="stylesheet">
+    <link href="css/medium.css" rel="stylesheet">
+    <link href="css/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img class="templelogo" src="images/templelogo.png" alt="Temple Logo">
+        <div class="headings">
+            <h1>Temple Inn & Suites</h1>
+            <div class="motto">Relax. You’re at the Temple.</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="page.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Temples</button>
+                    <div class="dropdown-content">
+                        <a href="#">Payson, Utah</a>
+                        <a href="#">Portland, Oregon</a>
+                        <a href="#">Hamilton, New Zealand</a>
+                        <a href="#">Tokyo, Japan</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a href="services.html">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Reception</a>
+                        <a href="#">Full-Time Missionaries</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="city">Contact Us</h2>
+
+        <div class="contactform">
+                <form action="thanks.html" method="get"><br>
+                  <label for="fname">First Name</label><br>
+                  <input type="text" id="fname" name="firstname"><br>
+              
+                  <label for="lname">Last Name</label><br>
+                  <input type="text" id="lname" name="lastname"><br>
+              
+                  <label for="subject">Comment</label><br>
+                  <textarea rows="10" cols="40" id="subject" name="subject"></textarea><br>
+                                
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+
+        <section>
+            <div class="contactinfo">
+                <div><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d437.6718353196775!2d-77.0957963846787!3d38.98328080473663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554839263737!5m2!1sen!2sus"></iframe>
+                    <div>
+                        <h2 class="contact">Temple Inn & Suites</h2>
+                    </div>
+                    <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br>(301) 897-9400<br>hello@templeinnandsuites.com
+                    </p>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="footer">&copy; 2019 Temple Inn & Suites<span id="currentDate"></span></p>
+        </div>
+    </footer>
+    <script src="js/togglemenu.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/weatherapi-preston.js"></script>
+    <script src="js/weathersum-preston.js"></script>
+    <script src="js/heroslides.js"></script>
+</body>
+
+</html>

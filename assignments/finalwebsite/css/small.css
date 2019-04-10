@@ -1,0 +1,405 @@
+body {
+    background-color: #faf3dd;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-style: light;
+}
+header {
+    padding: 10px;
+	background-color: #9db4c0;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.templelogo{
+    width: 80px;
+    height: auto;
+	vertical-align: middle;
+    margin: 10px;
+    margin-right: 20px;
+}
+.motto {
+    text-align: center;
+    color: #c2dfe3;
+    margin: 5px;
+}
+h1{
+    color: #faf3dd;
+    margin-bottom: auto;
+    margin-top: 5px;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    color: #253237;
+}
+h3{
+    text-align: center;
+}
+.contact{
+    text-align: center;
+    padding-top: auto;
+}
+
+nav {
+	background-color: #5c6b73;
+	text-align: center;
+	padding: 0;
+}
+.navigation {
+	list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.navigation a {
+	display: flex;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+.navigation a:hover {
+	background-color: #c2dfe3;
+	color:#00303f;
+}
+.navigation li:first-child{
+    display: flex;
+}
+.navigation li{
+    display: none;
+}
+.responsive li{
+    display: flex;
+}
+.active {
+    background-color:#696d7d;
+}
+main, footer{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.fullwidth {
+    width: 100%;
+    position: relative;
+}
+.city{
+    color: #00303f;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+.articletitle{
+    margin: 3px;
+    font-family: "Oswald", sans-serif;
+    color: #00303f;
+}
+.article{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 6px 2px gray; 
+    border: 3px solid #7a9d96;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+.articleimg {
+    display: flex;
+    width: 100%;
+    float: right;
+    padding: 5px;
+}
+.receptiontest{
+    position: absolute;
+    color: white;
+}
+.receptiontest2{
+    float: right;
+    color: white;
+}
+.author{
+    color: #00303f;
+    font-family: "EB Garamond", serif;
+}
+p {
+    color: #00303f;
+    text-align: left;
+}
+.book{
+    display: block;
+    background-color: #db7f67;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 20px 100px 20px 100px;
+    font-size: 20px;
+    box-shadow: 3px 7px 5px #888888;
+}
+.footer {
+    display: flex;
+    background-color: #5c6b73;
+    color: #ffffff;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 0;
+}
+.contactinfo{
+    background-color:#9db4c0;
+    color:#00303f;
+    padding: 20px;
+    padding-top: 5px;
+    clear: both;
+}
+section iframe{
+    display: flex;
+    float: right;
+}
+
+.forecast{
+    display: none;
+}
+.herodiv{
+    margin: 10px auto;
+    position: relative;
+    width: 100%;
+}
+.stats {
+	top: 35px;
+	left: 30px;
+    background: #9db4c0;
+    opacity: .8;
+	border: 1px solid #000;
+	padding: 10px;
+    box-shadow: 0 0 30px #fff;
+    width: 25%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(200px, auto);
+}
+figure{ 
+    margin: 0.5em;
+    padding: 0.5em;
+}
+.gallery img {
+    border: 1px solid black;
+    box-shadow: 2px 2px 6px 2px gray;
+    width: 100%;
+}
+.galleryheader{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.stormcenter{
+    color: #00303f;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.thanks{
+    padding: 20px;
+    font-size: 1.5em;
+}
+fieldset{
+    margin-bottom: 30px;
+    border: solid #7a9d96;
+    box-shadow: 1px 1px 5px 1px gray;
+}
+.reservation{
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    margin: auto;
+    color: white;
+    padding: 20px;
+    background-color: #9db4c0;
+    margin-bottom: 20px;
+}
+input {
+    padding: 5px;
+  }
+  .submit{
+    display: block;
+    font-family: 'Playfair Display', serif;
+    background-color: #db7f67;
+    color: white;
+    padding: 20px 100px 20px 100px;
+    font-size: 20px;
+    box-shadow: 2px 6px 5px #888888;
+  }
+  .date{
+      color: #00303f;
+  }
+  .comments{
+      display: flex;
+  }
+
+/* Dropdown Menu */
+.dropbtn {
+    background-color: #5c6b73;
+    color: white;
+    padding: 16px;
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.5rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #c2dfe3;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #c2dfe3;}
+
+
+
+  /* Slideshow */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+.test{
+    background-color: #c2dfe3;
+    box-shadow: 2px 2px 6px 2px gray; 
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    overflow: auto;
+}
+h2{
+    text-align: center;
+}
+.testimg{
+    display: none;
+} 
+.testimg2{
+    display: none;
+}
+.underline{
+    text-decoration: underline;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #db7f67;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #bbb;
+  }
+  
+  .contactform {
+    border-radius: 5px;
+    background-color: #c2dfe3;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+.color-box{
+    background-color: green;
+    width: 100%;
+    height: 50px;
+}
+.templeimg{
+    width: 50%;
+}
