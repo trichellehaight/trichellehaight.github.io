@@ -13,7 +13,7 @@ request.onload = function() {
 
     for (let i = 0; i < info.length; i++) {
 
-        if (info[i].name == "Payson, UT") {
+        if (info[i].name == "Hamilton, New Zealand") {
             let closures = info[i].closures;
             let infoNum = 0;
 

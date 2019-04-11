@@ -32,9 +32,9 @@
                     <button class="dropbtn">Temples</button>
                     <div class="dropdown-content">
                         <a href="payson.html">Payson, Utah</a>
-                        <a href="portland.html">Portland, Oregon</a>
-                        <a href="hamilton.html">Hamilton, New Zealand</a>
-                        <a href="tokyo.html">Tokyo, Japan</a>
+                        <a href="#">Portland, Oregon</a>
+                        <a href="#">Hamilton, New Zealand</a>
+                        <a href="#">Tokyo, Japan</a>
                     </div>
                 </div>
             </li>
@@ -53,22 +53,21 @@
     </nav>
 
     <main>
-        <h2 class="city">Payson, Utah Temple</h2>
         <div class="slideshow-container">
             <div class="mySlides fade">
-                <img class="templehero" src="images/payson-1.jpg">
+                <img src="images/heroimage-2.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img class="templehero" src="images/payson-2.jpg">
+                <img src="images/heroimage-3.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img class="templehero" src="images/payson-3.jpg">
+                <img src="images/heroimage-4.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img class="templehero" src="images/payson-4.jpg">
+                <img src="images/heroimage-5.jpg" style="width:100%">
             </div>
             <div class="mySlides fade">
-                <img class="templehero" src="images/payson-5.jpg">
+                <img src="images/heroimage-6.jpg" style="width:100%">
             </div>
         </div>
         <br>
@@ -80,31 +79,32 @@
             <span class="dot"></span>
         </div>
 
-        <div>
-            <section class="stats">
-                <h3>Payson Weather</h3>
-                <p>Current: <span id="current"> &deg;F</span></p>
-                <p>High: <span id="high"></span> &deg;F</p>
-                <p>Wind Chill: <span id="windchill"></span> &deg;F</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Wind Speed: <span id="wind"></span> mph</p>
-            </section>
-        </div>
-
+        <h2 class="city">Temples</h2>
         <section>
-            <h2>Address:</h2>
-            <p>1494 S 930 W<br>Payson, UT 84651<br>United States</p>
-            <h2>Telephone</h2>
-            <p>(1) 801-754-4949</p>
-            <h2>Services:</h2>
-            <p>No clothing rental available<br>No cafeteria available<br>No patron housing available<br>Distribution
-                center nearby</p>
+
         </section>
         <section>
-            <h2>Temple Closures:</h2>
-            <div id="templedates"></div>
+            <div class="article">
+                <img src="images/preston-article.jpg" alt="Spring Buds" class="articleimg">
+                <h2 class="articletitle">Spring is Coming!</h2>
+                <pre class="author">Author: Michael Scott</pre>
+                <p>The weather is warming up and Idaho is welcoming spring!
+                    <br>With temperatures in the upper 50s daily, Idaho is preparing for spring and all of
+                    the wonderful things it brings. Have you noticed any of your trees budding yet? The grass
+                    is beginning to turn green and the snow is almost melted!
+                    <br>If you are getting a head start in planting outdoor plants, please be cautious as
+                    warmer weather during the day doesn't always mean that you can avoid the nightly frost!
+                    Protect your plants from frost bite by covering them up at night. All it takes is frostbite
+                    for you to lose all of your beautiful plants!
+                    <small><a href="#">continue to full article</a></small>
+                </p>
+            </div>
         </section>
-
+        <section>
+            <div>
+                <input class="book" type="button" onclick="location.href='reservation.html';" value="Book Now!" />
+            </div>
+        </section>
         <section>
             <div class="contactinfo">
                 <div><iframe
@@ -125,7 +125,8 @@
     <script src="js/togglemenu.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/windchill.js"></script>
-    <script src="js/temple-payson.js"></script>
+    <script src="js/weatherapi-preston.js"></script>
+    <script src="js/weathersum-preston.js"></script>
     <script src="js/heroslides.js"></script>
 </body>
 

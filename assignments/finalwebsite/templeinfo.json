@@ -29,25 +29,13 @@
     {
       "name": "Hamilton, New Zealand",
       "closures" : [
-        "TEMPLE CURRENTLY CLOSED DURING RENOVATIONS"
+        "** TEMPLE CURRENTLY CLOSED DURING RENOVATIONS **"
       ]
     },
     {
       "name": "Tokyo, Japan",
       "closures" : [
-        "TEMPLE CURRENTLY CLOSED DURING RENOVATIONS"
-      ]
-    },
-    {
-      "name": "Preston",
-      "motto": "Home of Napoleon Dynamite.",
-      "yearFounded": 1866,
-      "currentPopulation": 5204,
-      "averageRainfall": 16.65,
-      "events" : [
-        "March 29: Work Creek Revival",
-        "July 8-12: Napoleon Dynamite Festival",
-        "November 2-4: Freedom Days"
+        "** TEMPLE CURRENTLY CLOSED DURING RENOVATIONS **"
       ]
     }
    ]
