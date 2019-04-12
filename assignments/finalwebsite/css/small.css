@@ -24,7 +24,7 @@ header {
 }
 .motto {
     text-align: center;
-    color: #c2dfe3;
+    color: #00303f;
     margin: 5px;
 }
 h1{
@@ -34,7 +34,7 @@ h1{
 }
 h2{
     font-family: 'Playfair Display', serif;
-    color: #253237;
+    color: #00303f;
     text-decoration: underline;
     font-weight: bold;
     padding-left: 15px;
@@ -83,7 +83,7 @@ nav {
     display: flex;
 }
 .active {
-    background-color:#696d7d;
+    background-color:#db7f67;
 }
 main, footer{
     max-width: 960px;
@@ -274,9 +274,6 @@ input {
     text-align: center;
     padding-bottom: 20px;
 }
-.active {
-    background-color: #c2dfe3;
-} 
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
