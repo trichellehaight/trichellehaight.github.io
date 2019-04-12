@@ -1,95 +1,79 @@
 @media only screen and (min-width: 64em){
 
+.forecastheader{
+    text-align: center;
+    font-family: "EB Garamond", serif;
+}
+.contact{
+    text-align: left;
+}
+.navigation li:first-child{
+    display: none;
+}
+.navigation li{
+    display: flex;
+}
+.navigation {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.articlebody{
+    background-color:#7a9d96;
+    padding-bottom: 90px;
+    color: #00303f;
+}
+.article img{
+    float: right;
+    width: 300px;
+    margin: auto;
+}
+p{
+    color: #00303f;
+    text-align: left;
+    padding-left: 0;
+    padding-right: 0;
+}
+.test{
+    background-color: #c2dfe3;
+    box-shadow: 2px 2px 6px 2px gray; 
+    padding: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    overflow: auto;
+}
+h2{
+    text-align: left;
+}
+section iframe{
+    display: flex;
+    float: right;
+}
+.services{
+    text-align: left;
+}
+h2{
+    font-family: 'Playfair Display', serif;
+    color: #253237;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 0;
+}
+.stats {
+    position: absolute;
+    top: 247px;
+    width: 15%;
+    background: #9db4c0;
+	border: 1px solid #5c6b73;
+	padding: 10px;
+    box-shadow: 2px 2px 6px 2px gray;
 
-    .forecastheader{
-        text-align: center;
-        font-family: "EB Garamond", serif;
-    }
-    .contact{
-        text-align: left;
-    }
-    .navigation li:first-child{
-        display: none;
-    }
-    .navigation li{
-        display: flex;
-    }
-    .navigation {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-    .articlebody{
-        background-color:#7a9d96;
-        padding-bottom: 90px;
-        color: #00303f;
-    }
-    .article img{
-        float: right;
-        width: 300px;
-        margin: auto;
-    }
-    
-    p {
-        color: #00303f;
-    }
-   
-    .forecast{
-        display: grid;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .forecast-image {
-        width: 100%;
-    }
-    .forecast td, th {
-        border: 2px solid #7a9d96;
-    }
-    tr{
-        border: .4pt;
-    }
-    .forecast table{
-        border-collapse: collapse;
-    }
-    .map{
-        display: inline-block;
-        width: 100%;
-        align-content: center;
-    }
-    .gallery {
-        grid-template-columns: repeat(3, minmax(300px, 1fr));
-    }
-    .weathergallery:hover {box-shadow: 0 0 50px #333;}
-    
-    .test{
-        background-color: #c2dfe3;
-        box-shadow: 2px 2px 6px 2px gray; 
-        padding: 20px;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        overflow: auto;
-    }
-    .testimg{
-        display: flex;
-        float: right;
-        width: 50%;
-        padding: 10px;
-    } 
-    .testimg2{
-        display: flex;
-        float: left;
-        width: 50%;
-        padding: 10px;
-    }
-    .underline{
-        text-decoration: underline;
-        font-size: 40px;
-        font-weight: bold;
-    }
-    h2{
-        text-align: left;
-    }
+}
+.gallery{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.galleryimg{
+    width: 100%;
+}
 }

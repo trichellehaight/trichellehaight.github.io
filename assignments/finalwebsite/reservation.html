@@ -20,21 +20,21 @@
         <img class="templelogo" src="images/templelogo.png" alt="Temple Logo">
         <div class="headings">
             <h1>Temple Inn & Suites</h1>
-            <div class="motto">Relax. You’re at the Temple.</div>
+            <div class="motto">Relax. You’re going to the Temple.</div>
         </div>
     </header>
     <nav>
         <ul class="navigation">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="page.html">Home</a></li>
+            <li><a href="homepage.html">Home</a></li>
             <li>
                 <div class="dropdown">
                     <button class="dropbtn">Temples</button>
                     <div class="dropdown-content">
-                        <a href="#">Payson, Utah</a>
-                        <a href="#">Portland, Oregon</a>
-                        <a href="#">Hamilton, New Zealand</a>
-                        <a href="#">Tokyo, Japan</a>
+                        <a href="payson.html">Payson, Utah</a>
+                        <a href="portland.html">Portland, Oregon</a>
+                        <a href="hamilton.html">Hamilton, New Zealand</a>
+                        <a href="tokyo.html">Tokyo, Japan</a>
                     </div>
                 </div>
             </li>
@@ -42,13 +42,13 @@
                 <div class="dropdown">
                     <button class="dropbtn">Services</button>
                     <div class="dropdown-content">
-                        <a href="#">Reception</a>
-                        <a href="#">Full-Time Missionaries</a>
+                        <a href="reception.html">Reception</a>
+                        <a href="missionaries.html">Full-Time Missionaries</a>
                     </div>
                 </div>
             </li>
             <li><a href="reservation.html" class="active">Reservations</a></li>
-            <li><a href="sodasprings.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
 
@@ -61,7 +61,7 @@
                 Email<br>
                 <input type="text" name="email" size="40" placeholder="yourname@gmail.com"><br><br>
                 Phone Number<br>
-                <input type="tel" name="number" size="30" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                <input type="tel" name="number" size="30" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                     placeholder="xxx-xxx-xxxx" required><br><br>
                 Zip Code<br>
                 <input type="number" name="zipcode" required><br><br>
@@ -91,6 +91,18 @@
                 <textarea class="comments" rows="10" cols="40" name="comment"></textarea><br><br>
                 <input class="submit" type="submit" value="RESERVE NOW"><br><br>
             </form>
+        </section>
+        <section>
+            <div class="contactinfo">
+                <div><iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d437.6718353196775!2d-77.0957963846787!3d38.98328080473663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1554839263737!5m2!1sen!2sus"></iframe>
+                    <div>
+                        <h2 class="contact">Temple Inn & Suites</h2>
+                    </div>
+                    <p>4800 Montgomery Ln #300<br>Bethesda, MD 20814<br>(301)
+                        897-9400<br>hello@templeinnandsuites.com<br><a href="resources.html">Resources</a>
+                    </p>
+                </div>
         </section>
     </main>
     <footer>
