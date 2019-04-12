@@ -132,6 +132,8 @@ li{
     margin-bottom: 25px;
     padding: 20px 100px 20px 100px;
     font-size: 20px;
+    color: white;
+    font-family: 'Playfair Display', serif;
     box-shadow: 2px 2px 6px 2px grey;
 }
 .footer {
@@ -329,6 +331,7 @@ input[type=text], select, textarea {
   } 
 input[type=submit] {
     background-color: #db7f67;
+    font-family: 'Playfair Display', serif;
     color: white;
     padding: 12px 20px;
     border: none;
