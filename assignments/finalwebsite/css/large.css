@@ -33,6 +33,10 @@ p{
     padding-left: 0;
     padding-right: 0;
 }
+.summaryheader{
+    text-align: center;
+    color: #00303f;
+}
 .test{
     background-color: #c2dfe3;
     box-shadow: 2px 2px 6px 2px gray; 
@@ -60,7 +64,7 @@ h2{
 }
 .stats {
     position: absolute;
-    top: 247px;
+    top: 246px;
     width: 15%;
     background: #9db4c0;
 	border: 1px solid #5c6b73;

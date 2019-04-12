@@ -41,6 +41,8 @@ h2{
 }
 h3{
     text-align: center;
+    color: #00303f;
+    text-decoration: underline;
 }
 h4{
     color: #00303f;
@@ -130,7 +132,7 @@ li{
     margin-bottom: 25px;
     padding: 20px 100px 20px 100px;
     font-size: 20px;
-    box-shadow: 3px 7px 5px #888888;
+    box-shadow: 2px 2px 6px 2px grey;
 }
 .footer {
     display: flex;
@@ -168,6 +170,9 @@ section iframe{
     box-shadow: 2px 2px 6px 2px gray;
     margin: auto;
 }
+.stats p{
+    text-align: center;
+}
 figure{ 
     margin: 0.5em;
     padding: 0.5em;
@@ -191,16 +196,21 @@ fieldset{
 }
 .reservation{
     display: flex;
+    box-shadow: 2px 2px 6px 2px grey;
     max-width: 500px;
     flex-direction: column;
     margin: auto;
-    color: white;
+    color: #00303f;
+    font-weight: bold;
     padding: 20px;
-    background-color: #9db4c0;
+    background-color: white;
     margin-bottom: 20px;
 }
 input {
     padding: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
   }
 .submit{
     display: block;
@@ -240,7 +250,7 @@ input {
     z-index: 1;
 }
 .dropdown-content a {
-    color: black;
+    color: #00303f;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -330,9 +340,11 @@ input[type=submit]:hover {
 } 
 .contactform {
     border-radius: 5px;
-    background-color: #c2dfe3;
+    background-color: white;
     padding: 20px;
     margin-bottom: 25px;
+    color: #00303f;
+    box-shadow: 2px 2px 6px 2px grey;
 }
 .color-box{
     background-color: green;

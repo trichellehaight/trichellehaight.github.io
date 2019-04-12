@@ -1,4 +1,19 @@
 @media only screen and (min-width: 600px){
-
-
+    
+    .services{
+        text-align: left;
+        padding-left: 15px;
+    }
+    .gallery{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+    }
+    .galleryimg{
+        width: 100%;
+    }
+    section iframe{
+        display: flex;
+        float: right;
+    }
     }
